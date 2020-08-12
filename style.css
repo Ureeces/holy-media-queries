@@ -47,11 +47,37 @@
 @media(max-width: 600px) {
   #app {
     display: flex;
+    flex-direction: column;
+  }
+
+  #middle {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main {
+    flex-direction: row;
+  }
+
+  #articles {
+    height: 35vh;
+  }
+
+  #ads {
+    height: 20vh;
+  }
+
+  #ads, #articles, #nav {
+    width: 100vw;
+  }
+
+  #footer {
+    height: 20vh;
   }
 }
 
 @media(max-width: 800px) {
-
+  
 }
 
 @media(min-width: 801px) {
