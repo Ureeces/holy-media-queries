@@ -24,7 +24,7 @@
 }
 
 #nav {
-  width: 15vw;
+  width: 20vw;
   background-color: #4b4e6d;
 }
 
@@ -34,7 +34,7 @@
 }
 
 #ads {
-  width: 15vw;
+  width: 20vw;
   background-color: #f2a541;
 }
 
@@ -42,4 +42,35 @@
   height: 15vh;
   width: 100vw;
   background-color: #f08a4b;
+}
+
+@media(max-width: 600px) {
+  #app {
+    display: flex;
+  }
+}
+
+@media(max-width: 800px) {
+
+}
+
+@media(min-width: 801px) {
+  #app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #middle {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #main {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  #nav {
+    flex-direction: column;
+  }
 }
