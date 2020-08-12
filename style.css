@@ -76,16 +76,40 @@
   }
 }
 
-@media(max-width: 800px) {
+@media(min-width: 601px)
+  and (max-width: 1000px) {
   
+  #middle {
+    flex-direction: row;
+  }
+
+  #nav {
+    width: 100vh;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 51vh;
+  }
+  
+  #articles {
+    width: 50vw;
+  }
+
+  #ads {
+    width: 50vw;
+  }
+
 }
 
-@media(min-width: 801px) {
+@media(min-width: 1001px) {
   #app {
     display: flex;
     flex-direction: column;
   }
-
+  
   #middle {
     display: flex;
     flex-direction: row;
@@ -93,7 +117,6 @@
   
   #main {
     display: flex;
-    flex-grow: 1;
   }
 
   #nav {
